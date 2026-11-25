@@ -1,0 +1,292 @@
+export const developer = {
+  name: "Muhammed Rashid P P",
+  role: "Full-stack developer",
+  location: "Kozhikode, Kerala, India",
+  stack: ["React", "Next.js", "TypeScript", "PostgreSQL"],
+  education: "B.Tech · Information Technology",
+  github: "Rashidrxq",
+};
+export const selectedProjects = [
+  "SalesOrder ERP",
+  "Job-Agent",
+  "WE CARE",
+  "AVIPATH",
+  "Evil CFO Simulator",
+  "Knee MRI ACL Detector",
+];
+export const contact = {
+  "email": "mailto:rashid.mhd.pp@gmail.com",
+  "github": "https://github.com/Rashidrxq",
+  "linkedin": "https://www.linkedin.com/in/rashidxxmhd",
+};
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { randomUUID } from "node:crypto";
+const MAX_INVOICE_SIZE = 15 * 1024 * 1024;
+const storageRoot = path.join(process.cwd(), "saleOrder_pdf_excel");
+const allowedTypes = new Map([
+  [".pdf", ["application/pdf"]],
+  [".xlsx", ["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/octet-stream"]],
+  [".xls", ["application/vnd.ms-excel", "application/octet-stream"]],
+]);
+const safePart = (value: string) => value.replace(/[^a-zA-Z0-9._-]/g, "_").replace(/^\.+/, "_");
+export async function saveInvoiceFile(orderNumber: string, file: File) {
+  const originalName = path.basename(file.name);
+  const extension = path.extname(originalName).toLowerCase();
+  const acceptedTypes = allowedTypes.get(extension);
+  if (!acceptedTypes || !acceptedTypes.includes(file.type)) throw new Error("Only PDF, XLS, and XLSX invoice files are allowed");
+  if (!file.size) throw new Error("The invoice file is empty");
+  if (file.size > MAX_INVOICE_SIZE) throw new Error("Invoice files must be 15 MB or smaller");
+  const dateFolder = new Date().toISOString().slice(0, 10);
+  const orderFolder = safePart(orderNumber);
+  const fileName = `${safePart(path.basename(originalName, extension)) || "invoice"}-${randomUUID().slice(0, 8)}${extension}`;
+  const relativePath = path.join(dateFolder, orderFolder, fileName).replaceAll("\\", "/");
+  const absolutePath = path.join(storageRoot, relativePath);
+  await mkdir(path.dirname(absolutePath), { recursive: true });
+  await writeFile(absolutePath, Buffer.from(await file.arrayBuffer()));
+  return { fileName: originalName, filePath: relativePath, fileType: file.type };
+}
+export async function readInvoiceFile(filePath: string) {
+  const root = path.resolve(storageRoot);
+  const absolutePath = path.resolve(storageRoot, filePath);
+  if (!absolutePath.startsWith(`${root}${path.sep}`)) throw new Error("Invalid invoice path");
+  return readFile(absolutePath);
+}
+export const invoiceContentType = (fileName: string) => path.extname(fileName).toLowerCase() === ".pdf" ? "application/pdf" : "application/octet-stream";
+import { ChangeEvent, useEffect, useState } from "react";
+import { FileText, Plus, Upload, X } from "lucide-react";
+type Resume = {
+  id: number | string;
+  name: string;
+  description: string;
+  skills: string[];
+  atsScore: number | null;
+  updated: string;
+  fileName?: string;
+  fileSize?: number;
+};
+const API_URL = "http://localhost:5000/api";
+export default function Resumes() {
+  const [resumes, setResumes] = useState<Resume[]>([]);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  // Load resumes from backend
+  useEffect(() => {
+    fetchResumes();
+  }, []);
+  const fetchResumes = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch(`${API_URL}/resumes`);
+      const data = await response.json();
+      if (data.success) {
+        const backendResumes: Resume[] = data.resumes.map((resume: any) => ({
+          id: resume.id,
+          name: resume.name,
+          description: "Recently uploaded resume",
+          skills: [],
+          atsScore: null,
+          updated: "Recently",
+          fileName: resume.file_name || resume.fileName,
+          fileSize: resume.file_size || resume.fileSize,
+        }));
+        setResumes(backendResumes);
+      }
+    } catch (error) {
+      console.error("Failed to load resumes:", error);
+      alert("Could not connect to the backend.");
+    } finally {
+      setLoading(false);
+    }
+  };
+  // Select resume file
+  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const allowedTypes = [
+      "application/pdf",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+import type { ReactNode } from 'react'
+type Props = { eyebrow: string; title: ReactNode; description?: string }
+export default function SectionHeading({ eyebrow, title, description }: Props) {
+  return (
+    <div className="section-heading reveal">
+      <div>
+        <div className="section-kicker"><span>{eyebrow}</span><span className="kicker-rule" /></div>
+        <h2>{title}</h2>
+      </div>
+      {description && <div className="section-heading-aside"><p>{description}</p></div>}
+    </div>
+  )
+}
+import 'package:flutter/material.dart';
+import 'dart:convert';
+import 'dart:math';
+import 'package:flutter/services.dart';
+class BirdFact {
+  final int no;
+  final String fact;
+  BirdFact({required this.no, required this.fact});
+  factory BirdFact.fromJson(Map<String, dynamic> json) {
+    return BirdFact(
+      no: json['no'],
+      fact: json['fact'],
+    );
+  }
+}
+class FactManager {
+  List<BirdFact> factsList = [];
+  Set<int> usedFacts = {};
+  Future<void> loadFacts() async {
+    final String response = await rootBundle.loadString('../assets/csvjson.json');
+    final List<dynamic> data = json.decode(response);
+    factsList = data.map((item) => BirdFact.fromJson(item)).toList();
+  }
+  // Shuffle facts for refresh
+  void shuffleFacts() {
+    factsList.shuffle();
+  }
+}
+class FactScreen extends StatefulWidget {
+  @override
+  _FactScreenState createState() => _FactScreenState();
+}
+class _FactScreenState extends State<FactScreen> {
+  FactManager factManager = FactManager();
+  List<BirdFact> displayedFacts = [];
+  // List of random colors for cards
+final List<Color> cardColors = [
+  Color(0xFFB3E5FC), // Calming Light Blue
+  Color(0xFFC8E6C9), // Calming Light Green
+  Color(0xFFFFF59D), // Calming Light Yellow
+  Color(0xFFF8BBD0), // Calming Light Pink
+  Color(0xFFE1BEE7), // Calming Light Purple
+  Color(0xFFB2DFDB), // Calming Aqua Green
+  Color(0xFFCFD8DC), // Calming Soft Gray Blue
+  Color(0xFFFFEB3B), // Calming Lemon Yellow
+  Color(0xFFD1C4E9), // Calming Lavender
+  Color(0xFFE3F2FD), // Soft Sky Blue
+];
+  @override
+  void initState() {
+    super.initState();
+    factManager.loadFacts().then((_) {
+      setState(() {
+        displayedFacts = factManager.factsList;
+export type CompanyState = {
+  round: number;
+  revenue: number;
+  operatingExpenses: number;
+  cash: number;
+  debt: number;
+  maintenanceBacklog: number;
+  supplierTrust: number;
+  employeeMorale: number;
+  operationalRisk: number;
+};
+export type CFOAction =
+  | "cut_maintenance"
+  | "delay_suppliers"
+  | "borrow_money"
+  | "invest_efficiency";
+export type GameEvent = {
+  title: string;
+  description: string;
+  category?: string;
+  round?: number;
+};
+export const initialCompany: CompanyState = {
+  round: 1,
+  revenue: 10_000_000,
+  operatingExpenses: 8_000_000,
+  cash: 5_000_000,
+  debt: 20_000_000,
+  maintenanceBacklog: 10,
+  supplierTrust: 80,
+  employeeMorale: 75,
+  operationalRisk: 20,
+};
+export const actionDetails: Record<
+  CFOAction,
+  { title: string; description: string }
+> = {
+  cut_maintenance: {
+    title: "Cut maintenance",
+    description: "Reduce expenses now but increase maintenance risk.",
+  },
+  delay_suppliers: {
+    title: "Delay supplier payments",
+    description: "Preserve cash while reducing supplier trust.",
+  },
+  borrow_money: {
+    title: "Borrow more money",
+    description: "Increase cash and outstanding debt.",
+  },
+  invest_efficiency: {
+    title: "Invest in efficiency",
+    description: "Spend cash to reduce expenses and improve resilience.",
+  },
+};
+export function calculateOperatingProfit(
+  company: CompanyState,
+): number {
+  return company.revenue - company.operatingExpenses;
+}
+"""Inference for sagittal, proton-density fat-suppressed knee series."""
+import json
+import math
+import struct
+from collections import deque
+from pathlib import Path
+import numpy as np
+from PIL import Image
+ROOT = Path(__file__).resolve().parent
+MAX_BYTES = 64 * 1024 * 1024
+def check_shape(shape):
+    if len(shape) != 3:
+        raise ValueError("Select a complete sagittal image series.")
+    depth, height, width = shape
+    if not (8 <= depth <= 128 and 96 <= height <= 1024 and 96 <= width <= 1024
+            and math.prod(shape) <= 25_000_000):
+        raise ValueError("Unsupported series dimensions or slice count.")
+def dataset_scan(data):
+    """Read the original numeric KneeMRI layout without executing pickle instructions."""
+    if len(data) > MAX_BYTES or not data.startswith(b"\x80\x02"):
+        raise ValueError("Choose an original KneeMRI .pck volume.")
+    # The released files use a short protocol-2 ndarray header, followed by
+    # a BINUNICODE payload containing little-endian uint16 pixel bytes in Latin-1.
+    import pickletools
+    previous = deque(maxlen=3)
+    shape = None
+    header = data[:768]
+    try:
+        for op, arg, pos in pickletools.genops(header):
+            if op.name == "TUPLE3" and len(previous) == 3 and all(type(x) is int for x in previous):
+                shape = tuple(previous)
+            if op.name == "NEWFALSE" and shape and b'u2' in header[:pos] and b'<' in header[:pos]:
+                if data[pos+1:pos+4] != b'h\x03X':
+                    break
+                check_shape(shape)
+                length = struct.unpack_from("<I", data, pos + 4)[0]
+                start = pos + 8
+                expected = math.prod(shape) * 2
+                if not expected <= length <= expected * 2 or start + length > len(data):
+                    break
+                raw = data[start:start+length].decode("utf-8").encode("latin1")
+                if len(raw) != expected:
+                    break
+                return np.frombuffer(raw, dtype="<u2").reshape(shape)
+            previous.append(arg if op.name.startswith("BININT") else None)
+    except (ValueError, UnicodeError, IndexError, struct.error):
+        pass
+    raise ValueError("Unsupported KneeMRI volume encoding.")
+def features(volume):
+    check_shape(volume.shape)
+    # Mirror-paired depth summaries make inference independent of file slice order.
+    n = len(volume)
+    half = [round(f * (n - 1)) for f in (.2, .3, .38, .44, .48)]
+    indices = half + [n - 1 - i for i in half]
+    small = []
+    for i in indices:
+        image = Image.fromarray(np.asarray(volume[i], dtype=np.float32))

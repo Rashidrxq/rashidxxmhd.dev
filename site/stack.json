@@ -1,0 +1,111 @@
+{
+  "owner": "Rashidrxq",
+  "repos": 6,
+  "languages": [
+    {
+      "name": "CSS",
+      "repos": 4
+    },
+    {
+      "name": "HTML",
+      "repos": 4
+    },
+    {
+      "name": "TypeScript",
+      "repos": 4
+    },
+    {
+      "name": "JavaScript",
+      "repos": 3
+    },
+    {
+      "name": "SQL",
+      "repos": 2
+    },
+    {
+      "name": "Dart",
+      "repos": 1
+    },
+    {
+      "name": "Python",
+      "repos": 1
+    }
+  ],
+  "tools": [
+    {
+      "name": "React",
+      "repos": 4
+    },
+    {
+      "name": "Vite",
+      "repos": 2
+    },
+    {
+      "name": "EfficientNet",
+      "repos": 1
+    },
+    {
+      "name": "Express",
+      "repos": 1
+    },
+    {
+      "name": "Flask",
+      "repos": 1
+    },
+    {
+      "name": "Flutter",
+      "repos": 1
+    },
+    {
+      "name": "Multer",
+      "repos": 1
+    },
+    {
+      "name": "Next.js",
+      "repos": 1
+    },
+    {
+      "name": "Node.js",
+      "repos": 1
+    },
+    {
+      "name": "NumPy",
+      "repos": 1
+    },
+    {
+      "name": "Pillow",
+      "repos": 1
+    },
+    {
+      "name": "PostgreSQL",
+      "repos": 1
+    },
+    {
+      "name": "Prisma",
+      "repos": 1
+    },
+    {
+      "name": "SQLite",
+      "repos": 1
+    },
+    {
+      "name": "Streamlit",
+      "repos": 1
+    },
+    {
+      "name": "YOLOv8",
+      "repos": 1
+    }
+  ],
+  "site": [
+    {
+      "name": "Vanilla JS",
+      "via": "editor and keyboard navigation"
+    },
+    {
+      "name": "Canvas 2D",
+      "via": "animated code wall and monogram"
+    }
+  ],
+  "ai": []
+}

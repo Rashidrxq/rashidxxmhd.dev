@@ -1,0 +1,699 @@
+{
+ "owner": "Rashidrxq",
+ "fetchedAt": "2026-11-25T21:53:57.319Z",
+ "about": {
+  "repo": "Rashidrxq",
+  "lines": [
+   "# Muhammed Rashid P P",
+   "",
+   "I’m Muhammed Rashid P P, a full-stack developer from Kozhikode, Kerala. I build React and Next.js interfaces and the APIs behind them.",
+   "",
+   "B.Tech in Information Technology · University of Calicut, 2025.",
+   "",
+   "[Email](mailto:rashid.mhd.pp@gmail.com)",
+   "[GitHub](https://github.com/Rashidrxq)",
+   "[LinkedIn](https://www.linkedin.com/in/rashidxxmhd)"
+  ]
+ },
+ "projects": [
+  {
+   "repo": "salesorder-erp",
+   "title": "SalesOrder ERP",
+   "detail": "I built the order APIs, session-based access controls and PostgreSQL models that keep the workflow in sync. The billing view generates PDFs for the handoff to dispatch.",
+   "links": [
+    {
+     "label": "Live demo",
+     "url": "https://sales-order-erp-remex.vercel.app"
+    }
+   ],
+   "url": "https://github.com/Rashidrxq/SalesOrder-ERP-REMEX",
+   "description": "An order travels from sales to store, production, billing, and dispatch. Each team sees the orders and actions assigned to its role.",
+   "tag": "Order management",
+   "stars": 0,
+   "language": "TypeScript",
+   "pushed": "2026-09-17",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": null,
+   "created": "2026-08-30",
+   "branch": "main",
+   "commits": null,
+   "files": 280,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/SalesOrder-ERP-REMEX",
+   "stack": [
+    "TypeScript",
+    "Next.js",
+    "React",
+    "Prisma",
+    "PostgreSQL"
+   ],
+   "images": [
+    {
+     "file": "shots/salesorder-erp.png",
+     "source": "shots/salesorder-erp.png",
+     "alt": "Source preview from SalesOrder ERP",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# SalesOrder ERP",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### An order travels from sales to store, production, billing, and dispatch. Each team sees the orders and actions assigned to its role.",
+    "",
+    "I built the order APIs, session-based access controls and PostgreSQL models",
+    "that keep the workflow in sync. The billing view generates PDFs for the",
+    "handoff to dispatch.",
+    "",
+    "Built with TypeScript · Next.js · React · Prisma · PostgreSQL",
+    "",
+    "[Visit](https://github.com/Rashidrxq/SalesOrder-ERP-REMEX)",
+    "[Live demo](https://sales-order-erp-remex.vercel.app)"
+   ]
+  },
+  {
+   "repo": "job-agent",
+   "title": "Job-Agent",
+   "detail": "A React dashboard talks to an Express API. I added PDF and DOCX validation to the upload flow and stored résumé and application records in SQLite.",
+   "links": [],
+   "url": "https://github.com/Rashidrxq/Job-Agent",
+   "description": "A workspace for job listings, résumés, and application history.",
+   "tag": "Job search tools",
+   "stars": 0,
+   "language": "TypeScript",
+   "pushed": "2026-10-01",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": null,
+   "created": "2026-09-30",
+   "branch": "main",
+   "commits": null,
+   "files": 58,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/Job-Agent",
+   "stack": [
+    "TypeScript",
+    "React",
+    "Express",
+    "Node.js",
+    "SQLite",
+    "Multer"
+   ],
+   "images": [
+    {
+     "file": "shots/job-agent.png",
+     "source": "shots/job-agent.png",
+     "alt": "Source preview from Job-Agent",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# Job-Agent",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### A workspace for job listings, résumés, and application history.",
+    "",
+    "A React dashboard talks to an Express API. I added PDF and DOCX validation",
+    "to the upload flow and stored résumé and application records in SQLite.",
+    "",
+    "Built with TypeScript · React · Express · Node.js · SQLite · Multer",
+    "",
+    "[Visit](https://github.com/Rashidrxq/Job-Agent)"
+   ]
+  },
+  {
+   "repo": "we-care",
+   "title": "WE CARE",
+   "detail": "Visitors can browse by department, read about a treatment, and choose an appointment. The demo uses fictional clinic and patient details.",
+   "links": [
+    {
+     "label": "Live demo",
+     "url": "https://we-care-healthcare-six.vercel.app"
+    }
+   ],
+   "url": "https://github.com/Rashidrxq/we-care",
+   "description": "A responsive clinic website with department pages, treatment information, and a demo appointment flow.",
+   "tag": "Clinic website",
+   "stars": 1,
+   "language": "TypeScript",
+   "pushed": "2026-11-23",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": null,
+   "created": "2026-11-23",
+   "branch": "main",
+   "commits": null,
+   "files": 45,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/we-care",
+   "stack": [
+    "TypeScript",
+    "React",
+    "CSS",
+    "Vite"
+   ],
+   "images": [
+    {
+     "file": "shots/we-care.png",
+     "source": "shots/we-care.png",
+     "alt": "Source preview from WE CARE",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# WE CARE",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### A responsive clinic website with department pages, treatment information, and a demo appointment flow.",
+    "",
+    "Visitors can browse by department, read about a treatment, and choose an",
+    "appointment. The demo uses fictional clinic and patient details.",
+    "",
+    "Built with TypeScript · React · CSS · Vite",
+    "",
+    "[Visit](https://github.com/Rashidrxq/we-care)",
+    "[Live demo](https://we-care-healthcare-six.vercel.app)"
+   ]
+  },
+  {
+   "repo": "avipath",
+   "title": "AVIPATH",
+   "detail": "For our four-person capstone, we connected a Flutter interface to a Flask backend and integrated machine-learning models into the app.",
+   "links": [],
+   "url": "https://github.com/Rashidrxq/AVIAN-PROJECT",
+   "description": "A Flutter app for exploring bird species, migration patterns, and poultry health.",
+   "tag": "University capstone",
+   "stars": 1,
+   "language": "Dart",
+   "pushed": "2025-07-04",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": null,
+   "created": "2025-07-04",
+   "branch": "main",
+   "commits": null,
+   "files": 311,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/AVIAN-PROJECT",
+   "stack": [
+    "Dart",
+    "Flutter",
+    "Python",
+    "Flask",
+    "YOLOv8",
+    "EfficientNet"
+   ],
+   "images": [
+    {
+     "file": "shots/avipath.png",
+     "source": "shots/avipath.png",
+     "alt": "Source preview from AVIPATH",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# AVIPATH",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### A Flutter app for exploring bird species, migration patterns, and poultry health.",
+    "",
+    "For our four-person capstone, we connected a Flutter interface to a Flask",
+    "backend and integrated machine-learning models into the app.",
+    "",
+    "Built with Dart · Flutter · Python · Flask · YOLOv8 · EfficientNet",
+    "",
+    "[Visit](https://github.com/Rashidrxq/AVIAN-PROJECT)"
+   ]
+  },
+  {
+   "repo": "evil-cfo-simulator",
+   "title": "Evil CFO Simulator",
+   "detail": "Pay suppliers late and cash improves, but supplier trust falls. The TypeScript engine tracks debt, morale, maintenance, and operational risk as the player chooses each move.",
+   "links": [],
+   "url": "https://github.com/Rashidrxq/Evil-CFO-Simulator",
+   "description": "A turn-based simulation of the costs behind a profitable quarter.",
+   "tag": "Business simulation",
+   "stars": 0,
+   "language": "TypeScript",
+   "pushed": "2026-10-24",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": null,
+   "created": "2026-10-24",
+   "branch": "main",
+   "commits": null,
+   "files": 9031,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/Evil-CFO-Simulator",
+   "stack": [
+    "TypeScript",
+    "React",
+    "Vite"
+   ],
+   "images": [
+    {
+     "file": "shots/evil-cfo-simulator.png",
+     "source": "shots/evil-cfo-simulator.png",
+     "alt": "Source preview from Evil CFO Simulator",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# Evil CFO Simulator",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### A turn-based simulation of the costs behind a profitable quarter.",
+    "",
+    "Pay suppliers late and cash improves, but supplier trust falls. The",
+    "TypeScript engine tracks debt, morale, maintenance, and operational risk as",
+    "the player chooses each move.",
+    "",
+    "Built with TypeScript · React · Vite",
+    "",
+    "[Visit](https://github.com/Rashidrxq/Evil-CFO-Simulator)"
+   ]
+  },
+  {
+   "repo": "knee-mri-acl-detector",
+   "title": "Knee MRI ACL Detector",
+   "detail": "The Streamlit interface accepts a scan series and displays research-model output. The repository includes sample scans, a trained model, and evaluation results.",
+   "links": [],
+   "url": "https://github.com/Rashidrxq/knee-mri-acl-detector",
+   "description": "A local Python app for exploring possible ACL tears in knee MRI scans.",
+   "tag": "Research prototype",
+   "stars": 0,
+   "language": "Python",
+   "pushed": "2026-11-23",
+   "forks": 0,
+   "watchers": 0,
+   "issues": null,
+   "license": "MIT",
+   "created": "2026-11-23",
+   "branch": "main",
+   "commits": null,
+   "files": 16,
+   "counts": {},
+   "github": "https://github.com/Rashidrxq/knee-mri-acl-detector",
+   "stack": [
+    "Python",
+    "Streamlit",
+    "NumPy",
+    "Pillow"
+   ],
+   "images": [
+    {
+     "file": "shots/knee-mri-acl-detector.png",
+     "source": "shots/knee-mri-acl-detector.png",
+     "alt": "Source preview from Knee MRI ACL Detector",
+     "xray": false
+    }
+   ],
+   "lines": [
+    "# Knee MRI ACL Detector",
+    "",
+    "\u0001IMG0\u0001",
+    "",
+    "### A local Python app for exploring possible ACL tears in knee MRI scans.",
+    "",
+    "The Streamlit interface accepts a scan series and displays research-model",
+    "output. The repository includes sample scans, a trained model, and",
+    "evaluation results.",
+    "",
+    "Built with Python · Streamlit · NumPy · Pillow",
+    "",
+    "[Visit](https://github.com/Rashidrxq/knee-mri-acl-detector)"
+   ]
+  }
+ ],
+ "palettes": [
+  {
+   "name": "Blackmoney",
+   "description": "Warm paper on near-black",
+   "light": false,
+   "bg": "#0b0b0a",
+   "fg": "#ebe6db",
+   "accent": "#e7c58a",
+   "kinds": {
+    "keyword": "#7fd1a0",
+    "string": "#e6c37a",
+    "number": "#f0885b",
+    "function": "#8fd0ee",
+    "type": "#c9a0e8",
+    "comment": "#7a766a",
+    "text": "#ebe6db",
+    "ident": "#cbe0c9",
+    "member": "#8fd0ee",
+    "punct": "#86837d"
+   },
+   "cursorline": "#11110f",
+   "ansi": [
+    "#0b0b0a",
+    "#7fd1a0",
+    "#e6c37a",
+    "#f0885b",
+    "#8fd0ee",
+    "#c9a0e8",
+    "#e7c58a",
+    "#ebe6db",
+    "#7a766a",
+    "#7fd1a0",
+    "#e6c37a",
+    "#f0885b",
+    "#8fd0ee",
+    "#c9a0e8",
+    "#e7c58a",
+    "#ebe6db"
+   ],
+   "color1": "#7fd1a0"
+  },
+  {
+   "name": "Paper",
+   "description": "Light, ink on cream",
+   "light": true,
+   "bg": "#f6f2e9",
+   "fg": "#1d1c1a",
+   "accent": "#b4532a",
+   "kinds": {
+    "keyword": "#2f6f4f",
+    "string": "#8a5a1a",
+    "number": "#b4532a",
+    "function": "#2c5d8a",
+    "type": "#5a4a8a",
+    "comment": "#8c887c",
+    "text": "#1d1c1a",
+    "ident": "#22352a",
+    "member": "#2c5d8a",
+    "punct": "#7f7c77"
+   },
+   "cursorline": "#ece8e0",
+   "ansi": [
+    "#f6f2e9",
+    "#2f6f4f",
+    "#8a5a1a",
+    "#b4532a",
+    "#2c5d8a",
+    "#5a4a8a",
+    "#b4532a",
+    "#1d1c1a",
+    "#8c887c",
+    "#2f6f4f",
+    "#8a5a1a",
+    "#b4532a",
+    "#2c5d8a",
+    "#5a4a8a",
+    "#b4532a",
+    "#1d1c1a"
+   ],
+   "color1": "#2f6f4f"
+  },
+  {
+   "name": "Sora",
+   "description": "Cool steel and teal",
+   "light": false,
+   "bg": "#0b1015",
+   "fg": "#d9e4ee",
+   "accent": "#4cc9f0",
+   "kinds": {
+    "keyword": "#4cc9f0",
+    "string": "#a9d6e5",
+    "number": "#ffa94d",
+    "function": "#9fb4ff",
+    "type": "#6ee7b7",
+    "comment": "#56687a",
+    "text": "#d9e4ee",
+    "ident": "#afdcef",
+    "member": "#9fb4ff",
+    "punct": "#7c858c"
+   },
+   "cursorline": "#111820",
+   "ansi": [
+    "#0b1015",
+    "#4cc9f0",
+    "#a9d6e5",
+    "#ffa94d",
+    "#9fb4ff",
+    "#6ee7b7",
+    "#4cc9f0",
+    "#d9e4ee",
+    "#56687a",
+    "#4cc9f0",
+    "#a9d6e5",
+    "#ffa94d",
+    "#9fb4ff",
+    "#6ee7b7",
+    "#4cc9f0",
+    "#d9e4ee"
+   ],
+   "color1": "#4cc9f0"
+  },
+  {
+   "name": "Circuit",
+   "description": "Board green, phosphor on black",
+   "light": false,
+   "bg": "#07110c",
+   "fg": "#d3f0dd",
+   "accent": "#3ddc84",
+   "kinds": {
+    "keyword": "#3ddc84",
+    "string": "#ffd166",
+    "number": "#ff8f70",
+    "function": "#59c3f0",
+    "type": "#c792ea",
+    "comment": "#4d6b5a",
+    "text": "#d3f0dd",
+    "ident": "#a6eac2",
+    "member": "#59c3f0",
+    "punct": "#778c7f"
+   },
+   "cursorline": "#0b1a12",
+   "ansi": [
+    "#07110c",
+    "#3ddc84",
+    "#ffd166",
+    "#ff8f70",
+    "#59c3f0",
+    "#c792ea",
+    "#3ddc84",
+    "#d3f0dd",
+    "#4d6b5a",
+    "#3ddc84",
+    "#ffd166",
+    "#ff8f70",
+    "#59c3f0",
+    "#c792ea",
+    "#3ddc84",
+    "#d3f0dd"
+   ],
+   "color1": "#3ddc84"
+  },
+  {
+   "name": "Amber",
+   "description": "Warm amber on ink",
+   "light": false,
+   "bg": "#0e0c08",
+   "fg": "#f1e6cc",
+   "accent": "#f7931a",
+   "kinds": {
+    "keyword": "#f7931a",
+    "string": "#e8d9a0",
+    "number": "#ff7a59",
+    "function": "#ffcf6b",
+    "type": "#9ad1d4",
+    "comment": "#7a6a4a",
+    "text": "#f1e6cc",
+    "ident": "#f3cd97",
+    "member": "#ffcf6b",
+    "punct": "#8b8474"
+   },
+   "cursorline": "#15120c",
+   "ansi": [
+    "#0e0c08",
+    "#f7931a",
+    "#e8d9a0",
+    "#ff7a59",
+    "#ffcf6b",
+    "#9ad1d4",
+    "#f7931a",
+    "#f1e6cc",
+    "#7a6a4a",
+    "#f7931a",
+    "#e8d9a0",
+    "#ff7a59",
+    "#ffcf6b",
+    "#9ad1d4",
+    "#f7931a",
+    "#f1e6cc"
+   ],
+   "color1": "#f7931a"
+  },
+  {
+   "name": "Indigo",
+   "description": "Violet on deep indigo",
+   "light": false,
+   "bg": "#0d0b14",
+   "fg": "#e2dcf2",
+   "accent": "#a97bff",
+   "kinds": {
+    "keyword": "#a97bff",
+    "string": "#c7b8f0",
+    "number": "#ff9ecb",
+    "function": "#8fb2ff",
+    "type": "#7ad9d0",
+    "comment": "#665f80",
+    "text": "#e2dcf2",
+    "ident": "#d1bff6",
+    "member": "#8fb2ff",
+    "punct": "#827e8e"
+   },
+   "cursorline": "#14111e",
+   "ansi": [
+    "#0d0b14",
+    "#a97bff",
+    "#c7b8f0",
+    "#ff9ecb",
+    "#8fb2ff",
+    "#7ad9d0",
+    "#a97bff",
+    "#e2dcf2",
+    "#665f80",
+    "#a97bff",
+    "#c7b8f0",
+    "#ff9ecb",
+    "#8fb2ff",
+    "#7ad9d0",
+    "#a97bff",
+    "#e2dcf2"
+   ],
+   "color1": "#a97bff"
+  },
+  {
+   "name": "Crimson",
+   "description": "Warm terracotta and charcoal",
+   "light": false,
+   "bg": "#140a0a",
+   "fg": "#f4e3d0",
+   "accent": "#ff8f1f",
+   "kinds": {
+    "keyword": "#ff8f1f",
+    "string": "#e8c39e",
+    "number": "#ffd27a",
+    "function": "#7fd1c8",
+    "type": "#e08a96",
+    "comment": "#7a5a52",
+    "text": "#f4e3d0",
+    "ident": "#f7ca9b",
+    "member": "#7fd1c8",
+    "punct": "#8f8177"
+   },
+   "cursorline": "#1e0f0f",
+   "ansi": [
+    "#140a0a",
+    "#ff8f1f",
+    "#e8c39e",
+    "#ffd27a",
+    "#7fd1c8",
+    "#e08a96",
+    "#ff8f1f",
+    "#f4e3d0",
+    "#7a5a52",
+    "#ff8f1f",
+    "#e8c39e",
+    "#ffd27a",
+    "#7fd1c8",
+    "#e08a96",
+    "#ff8f1f",
+    "#f4e3d0"
+   ],
+   "color1": "#ff8f1f"
+  },
+  {
+   "name": "Slate",
+   "description": "Neutral graphite",
+   "light": false,
+   "bg": "#111214",
+   "fg": "#d6d8dc",
+   "accent": "#9aa5b1",
+   "kinds": {
+    "keyword": "#9ab0c4",
+    "string": "#b9c4b0",
+    "number": "#d3a37a",
+    "function": "#c4b8d6",
+    "type": "#a3c4c0",
+    "comment": "#666b73",
+    "text": "#d6d8dc",
+    "ident": "#c4ccd5",
+    "member": "#c4b8d6",
+    "punct": "#7d7f82"
+   },
+   "cursorline": "#1a1b1e",
+   "ansi": [
+    "#111214",
+    "#9ab0c4",
+    "#b9c4b0",
+    "#d3a37a",
+    "#c4b8d6",
+    "#a3c4c0",
+    "#9aa5b1",
+    "#d6d8dc",
+    "#666b73",
+    "#9ab0c4",
+    "#b9c4b0",
+    "#d3a37a",
+    "#c4b8d6",
+    "#a3c4c0",
+    "#9aa5b1",
+    "#d6d8dc"
+   ],
+   "color1": "#9ab0c4"
+  }
+ ],
+ "themeStats": {},
+ "themeThumbs": {
+  "blackmoney": "assets/themes/blackmoney.svg",
+  "paper": "assets/themes/paper.svg",
+  "sora": "assets/themes/sora.svg",
+  "circuit": "assets/themes/circuit.svg",
+  "amber": "assets/themes/amber.svg",
+  "indigo": "assets/themes/indigo.svg",
+  "crimson": "assets/themes/crimson.svg",
+  "slate": "assets/themes/slate.svg"
+ },
+ "work": [
+  {
+   "when": "Internship",
+   "title": "Web Development Intern",
+   "org": "Dene Branding",
+   "desc": "Built responsive interfaces and fixed more than 15 UI and performance issues."
+  }
+ ],
+ "talks": [],
+ "links": [
+  {
+   "label": "Email",
+   "url": "mailto:rashid.mhd.pp@gmail.com"
+  },
+  {
+   "label": "GitHub",
+   "url": "https://github.com/Rashidrxq"
+  },
+  {
+   "label": "LinkedIn",
+   "url": "https://www.linkedin.com/in/rashidxxmhd"
+  }
+ ],
+ "more": [
+  "evil-cfo-simulator",
+  "knee-mri-acl-detector"
+ ]
+}

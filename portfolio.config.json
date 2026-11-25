@@ -1,0 +1,270 @@
+{
+  "identity": {
+    "name": "Muhammed Rashid P P",
+    "barTitle": "MUHAMMED RASHID P P",
+    "terminalUser": "rashid",
+    "domain": "Rashidrxq",
+    "tagline": "full-stack developer · Kozhikode, Kerala",
+    "github": "Rashidrxq",
+    "storagePrefix": "rashidrxq"
+  },
+  "about": {
+    "bio": "I’m Muhammed Rashid P P, a full-stack developer from Kozhikode, Kerala. I build React and Next.js interfaces and the APIs behind them.",
+    "extra": "B.Tech in Information Technology · University of Calicut, 2025."
+  },
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:rashid.mhd.pp@gmail.com"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Rashidrxq"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rashidxxmhd"
+    }
+  ],
+  "work": [
+    {
+      "when": "Internship",
+      "title": "Web Development Intern",
+      "org": "Dene Branding",
+      "desc": "Built responsive interfaces and fixed more than 15 UI and performance issues."
+    }
+  ],
+  "projects": [
+    {
+      "name": "SalesOrder ERP",
+      "tag": "Order management",
+      "desc": "An order travels from sales to store, production, billing, and dispatch. Each team sees the orders and actions assigned to its role.",
+      "long": "I built the order APIs, session-based access controls and PostgreSQL models that keep the workflow in sync. The billing view generates PDFs for the handoff to dispatch.",
+      "githubRepo": "Rashidrxq/SalesOrder-ERP-REMEX",
+      "shots": [
+        "shots/salesorder-erp.png"
+      ],
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "url": "https://github.com/Rashidrxq/SalesOrder-ERP-REMEX",
+      "links": [
+        {
+          "label": "Live demo",
+          "url": "https://sales-order-erp-remex.vercel.app"
+        }
+      ],
+      "more": false,
+      "facts": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "files": 280,
+        "branch": "main",
+        "language": "TypeScript",
+        "created": "2026-08-30",
+        "pushed": "2026-09-17",
+        "license": null
+      }
+    },
+    {
+      "name": "Job-Agent",
+      "tag": "Job search tools",
+      "desc": "A workspace for job listings, résumés, and application history.",
+      "long": "A React dashboard talks to an Express API. I added PDF and DOCX validation to the upload flow and stored résumé and application records in SQLite.",
+      "githubRepo": "Rashidrxq/Job-Agent",
+      "shots": [
+        "shots/job-agent.png"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "Express",
+        "Node.js",
+        "SQLite",
+        "Multer"
+      ],
+      "url": "https://github.com/Rashidrxq/Job-Agent",
+      "links": [],
+      "more": false,
+      "facts": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "files": 58,
+        "branch": "main",
+        "language": "TypeScript",
+        "created": "2026-09-30",
+        "pushed": "2026-10-01",
+        "license": null
+      }
+    },
+    {
+      "name": "WE CARE",
+      "tag": "Clinic website",
+      "desc": "A responsive clinic website with department pages, treatment information, and a demo appointment flow.",
+      "long": "Visitors can browse by department, read about a treatment, and choose an appointment. The demo uses fictional clinic and patient details.",
+      "githubRepo": "Rashidrxq/we-care",
+      "shots": [
+        "shots/we-care.png"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "CSS",
+        "Vite"
+      ],
+      "url": "https://github.com/Rashidrxq/we-care",
+      "links": [
+        {
+          "label": "Live demo",
+          "url": "https://we-care-healthcare-six.vercel.app"
+        }
+      ],
+      "more": false,
+      "facts": {
+        "stars": 1,
+        "forks": 0,
+        "watchers": 0,
+        "files": 45,
+        "branch": "main",
+        "language": "TypeScript",
+        "created": "2026-11-23",
+        "pushed": "2026-11-23",
+        "license": null
+      }
+    },
+    {
+      "name": "AVIPATH",
+      "tag": "University capstone",
+      "desc": "A Flutter app for exploring bird species, migration patterns, and poultry health.",
+      "long": "For our four-person capstone, we connected a Flutter interface to a Flask backend and integrated machine-learning models into the app.",
+      "githubRepo": "Rashidrxq/AVIAN-PROJECT",
+      "shots": [
+        "shots/avipath.png"
+      ],
+      "stack": [
+        "Dart",
+        "Flutter",
+        "Python",
+        "Flask",
+        "YOLOv8",
+        "EfficientNet"
+      ],
+      "url": "https://github.com/Rashidrxq/AVIAN-PROJECT",
+      "links": [],
+      "more": false,
+      "facts": {
+        "stars": 1,
+        "forks": 0,
+        "watchers": 0,
+        "files": 311,
+        "branch": "main",
+        "language": "Dart",
+        "created": "2025-07-04",
+        "pushed": "2025-07-04",
+        "license": null
+      }
+    },
+    {
+      "name": "Evil CFO Simulator",
+      "tag": "Business simulation",
+      "desc": "A turn-based simulation of the costs behind a profitable quarter.",
+      "long": "Pay suppliers late and cash improves, but supplier trust falls. The TypeScript engine tracks debt, morale, maintenance, and operational risk as the player chooses each move.",
+      "githubRepo": "Rashidrxq/Evil-CFO-Simulator",
+      "shots": [
+        "shots/evil-cfo-simulator.png"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "Vite"
+      ],
+      "url": "https://github.com/Rashidrxq/Evil-CFO-Simulator",
+      "links": [],
+      "more": true,
+      "facts": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "files": 9031,
+        "branch": "main",
+        "language": "TypeScript",
+        "created": "2026-10-24",
+        "pushed": "2026-10-24",
+        "license": null
+      }
+    },
+    {
+      "name": "Knee MRI ACL Detector",
+      "tag": "Research prototype",
+      "desc": "A local Python app for exploring possible ACL tears in knee MRI scans.",
+      "long": "The Streamlit interface accepts a scan series and displays research-model output. The repository includes sample scans, a trained model, and evaluation results.",
+      "githubRepo": "Rashidrxq/knee-mri-acl-detector",
+      "shots": [
+        "shots/knee-mri-acl-detector.png"
+      ],
+      "stack": [
+        "Python",
+        "Streamlit",
+        "NumPy",
+        "Pillow"
+      ],
+      "url": "https://github.com/Rashidrxq/knee-mri-acl-detector",
+      "links": [],
+      "more": true,
+      "facts": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "files": 16,
+        "branch": "main",
+        "language": "Python",
+        "created": "2026-11-23",
+        "pushed": "2026-11-23",
+        "license": "MIT"
+      }
+    }
+  ],
+  "talks": [],
+  "wallRepos": [
+    [
+      "Rashidrxq/SalesOrder-ERP-REMEX",
+      1
+    ],
+    [
+      "Rashidrxq/Job-Agent",
+      1
+    ],
+    [
+      "Rashidrxq/we-care",
+      1
+    ],
+    [
+      "Rashidrxq/AVIAN-PROJECT",
+      1
+    ],
+    [
+      "Rashidrxq/Evil-CFO-Simulator",
+      1
+    ],
+    [
+      "Rashidrxq/knee-mri-acl-detector",
+      1
+    ]
+  ],
+  "siteStack": [
+    {
+      "name": "Vanilla JS",
+      "via": "editor and keyboard navigation"
+    },
+    {
+      "name": "Canvas 2D",
+      "via": "animated code wall and monogram"
+    }
+  ]
+}
